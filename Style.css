@@ -4,9 +4,9 @@ body {
 
 #frame {
   background: white;
-  border: 10pt black outset;
-  border-radius: 20pt;
-  font: bold 80pt serif;
+  border: 2vw black outset;
+  border-radius: 4vw;
+  font: bold 10vw serif;
   aspect-ratio: 5 / 7;
   width: 25vw;
 }
