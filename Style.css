@@ -6,7 +6,7 @@ body {
   background: white;
   border: 2vh black outset;
   border-radius: 4vh;
-  font: bold 10vh serif;
+  font: bold 20vh serif;
   aspect-ratio: 5 / 7;
   width: 50vh;
 }
