@@ -5,8 +5,8 @@ body {
 #frame {
   background: white;
   border: 10pt black outset;
-  border-radius: 25pt;
-  padding: 50pt;
-  font: bold 100pt serif;
+  border-radius: 20pt;
+  font: bold 80pt serif;
   aspect-ratio: 5 / 7;
+  width: 25vw;
 }
