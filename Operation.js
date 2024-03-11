@@ -16,7 +16,7 @@ const ranks = [2, 3, 4, 5, 6, 7, 8, 9, 'J', 'Q', 'K', 'A'];
 const frame = document.getElementById('frame');
 
 function randomFrom(group) {
-  return group[Math.floor(Math.random() * (group.length - 1))]
+  return group[Math.floor(Math.random() * group.length)]
 }
 
 function getCard() {
