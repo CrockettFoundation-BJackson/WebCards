@@ -19,12 +19,14 @@ function randomFrom(group) {
   return group[Math.floor(Math.random() * group.length)]
 }
 
-function getCard() {
+function getCard(frame) {
   let card = { rank: randomFrom(ranks), suit: randomFrom(suits) };
   frame.textContent = card.rank + card.suit.icon;
   frame.style.color = card.suit.color;
   frame.style.borderColor = card.suit.color;
 }
 
-frame.addEventListener('click', getCard);
-getCard();
+frame.addEventListener(
+  'click', () => { getCard(frame) }
+);
+getCard(frame);
