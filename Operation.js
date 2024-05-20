@@ -13,7 +13,7 @@ const suits = [
   new Suit('Spades', '♠', 'darkslategray'),
 ];
 const ranks = [2, 3, 4, 5, 6, 7, 8, 9, 'J', 'Q', 'K', 'A'];
-const frame = document.getElementById('frame');
+const frames = document.getElementsByClassName('frame');
 
 function randomFrom(group) {
   return group[Math.floor(Math.random() * group.length)]
@@ -24,9 +24,16 @@ function getCard(frame) {
   frame.textContent = card.rank + card.suit.icon;
   frame.style.color = card.suit.color;
   frame.style.borderColor = card.suit.color;
+  resetAnimation(frame);
 }
 
-frame.addEventListener(
-  'click', () => { getCard(frame) }
-);
-getCard(frame);
+function resetAnimation(frame) {
+  frame.style.animation = "none";
+  frame.offsetHeight;
+  frame.style.animation = "flip 0.3s ease-out";
+}
+
+for (let frame of frames) {
+  frame.addEventListener('click', () => getCard(frame));
+  getCard(frame);
+}
