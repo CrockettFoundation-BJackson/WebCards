@@ -1,12 +1,25 @@
 body {
   background: seagreen;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#frame {
+.frame {
   background: white;
-  border: 2vh black outset;
+  border: 8px black outset;
   border-radius: 4vh;
-  font: bold 20vh serif;
+  font: bold 5rem serif;
   aspect-ratio: 5 / 7;
-  width: 50vh;
+  height: 40vh;
+  margin: 8px;
+}
+
+@keyframes flip {
+  0% {
+    color: white;
+  }
+  50% {
+    color: white;
+    transform: rotate3d(0,1,0,90deg);
+  }
 }
