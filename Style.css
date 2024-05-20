@@ -16,10 +16,10 @@ body {
 
 @keyframes flip {
   0% {
-    color: white;
+    color: transparent;
   }
   50% {
-    color: white;
+    color: transparent;
     transform: rotate3d(0,1,0,90deg);
   }
 }
