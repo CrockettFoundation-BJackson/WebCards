@@ -24,13 +24,6 @@ function getCard(frame) {
   frame.textContent = card.rank + card.suit.icon;
   frame.style.color = card.suit.color;
   frame.style.borderColor = card.suit.color;
-  resetAnimation(frame);
-}
-
-function resetAnimation(frame) {
-  frame.style.animation = "none";
-  frame.offsetHeight;
-  frame.style.animation = "flip 0.3s ease-out";
 }
 
 for (let frame of frames) {
