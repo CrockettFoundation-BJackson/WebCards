@@ -6,12 +6,12 @@ body {
 
 .frame {
   background: white;
-  border: 8px black outset;
+  border: 6px black outset;
   border-radius: 4vh;
   font: bold 2.5rem serif;
   aspect-ratio: 5 / 7;
-  height: 40vh;
-  margin: 8px;
+  height: 45vh;
+  margin: 4px;
 }
 
 @keyframes flip {
